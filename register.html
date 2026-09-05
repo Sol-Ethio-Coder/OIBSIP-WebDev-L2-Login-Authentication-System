@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyhold — Register</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div>
+    <div class="mark">
+      <svg class="mark__icon" viewBox="0 0 64 64" fill="none">
+        <circle cx="26" cy="26" r="10" stroke="#C9974B" stroke-width="5"/>
+        <rect x="30" y="34" width="6" height="20" rx="1" fill="#C9974B" transform="rotate(45 33 44)"/>
+      </svg>
+      <span class="mark__name">Keyhold</span>
+    </div>
+
+    <main class="card">
+      <h1 class="card__title">Create an account</h1>
+      <p class="card__subtitle">It only takes a moment.</p>
+
+      <p class="message" id="formMessage" role="alert"></p>
+
+      <form id="registerForm" novalidate>
+        <div class="field">
+          <label class="field__label" for="username">Username</label>
+          <input class="field__input" type="text" id="username" name="username" required>
+        </div>
+        <div class="field">
+          <label class="field__label" for="email">Email</label>
+          <input class="field__input" type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label class="field__label" for="password">Password</label>
+          <input class="field__input" type="password" id="password" name="password" required>
+          <p class="field__hint">At least 8 characters, with at least 1 number.</p>
+        </div>
+        <button class="submit" type="submit">Register</button>
+      </form>
+
+      <p class="switch">Already have an account? <a href="index.html">Log in</a></p>
+    </main>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyhold — Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="dashboard__header">
+      <h1 class="dashboard__welcome">Welcome, <span id="usernameSlot">there</span></h1>
+      <button class="logout" id="logoutButton" type="button">Log out</button>
+    </div>
+
+    <section class="vault">
+      <div class="vault__row">
+        <span class="vault__label">Status</span>
+        <span>Session active</span>
+      </div>
+      <div class="vault__row">
+        <span class="vault__label">Signed in</span>
+        <span id="loginTimeSlot">—</span>
+      </div>
+      <div class="vault__row">
+        <span class="vault__label">Access</span>
+        <span>Protected content, visible only while logged in</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
