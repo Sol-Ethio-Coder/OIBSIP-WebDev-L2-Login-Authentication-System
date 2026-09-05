@@ -3,6 +3,9 @@
 A front-end-only authentication demo: registration, login, and a protected dashboard,
 built with vanilla HTML, CSS, and JavaScript.
 
+- **Repo:** https://github.com/your-username/keyhold
+- **Live demo:** https://keyhold.vercel.app
+
 ## Features
 - **Register** (`register.html`): username, email, password
   - Password must be 8+ characters with at least 1 number
