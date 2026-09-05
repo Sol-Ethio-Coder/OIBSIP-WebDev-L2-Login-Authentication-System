@@ -3,8 +3,7 @@
 A front-end-only authentication demo: registration, login, and a protected dashboard,
 built with vanilla HTML, CSS, and JavaScript.
 
-- **Repo:** https://github.com/your-username/keyhold
-- **Live demo:** https://keyhold.vercel.app
+- **Live demo:** https://sol-login-authentication.vercel.app
 
 ## Features
 - **Register** (`register.html`): username, email, password
